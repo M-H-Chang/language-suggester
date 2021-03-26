@@ -15,7 +15,8 @@
 
 ## Description
 
-_Many people have trouble with picking a programming language to start out. This webpage gathers information about your personality such as interests, what type of development you want to implement into your code, what kind of companies you are interested in, your personality type by animal(certain animals indicate the language you should pursue), and why you chose to pursue computer science. Once we have all those indicators, our program will generate a language for the person to pursue. We also have consultants who will reach out to the user to pursue further conversation about other specifics to provide even better feedback to the user. Users also have the chance to test which personality types/interests gets you different language outputs._
+_The website has been published and the link is: https://m-h-chang.github.io/language-suggester/
+Many people have trouble with picking a programming language to start out. This webpage gathers information about your personality such as interests, what type of development you want to implement into your code, what kind of companies you are interested in, your personality type by animal(certain animals indicate the language you should pursue), and why you chose to pursue computer science. Once we have all those indicators, our program will generate a language for the person to pursue. We also have consultants who will reach out to the user to pursue further conversation about other specifics to provide even better feedback to the user. Users also have the chance to test which personality types/interests gets you different language outputs._
 
 ## Setup/Installation Requirements
 
