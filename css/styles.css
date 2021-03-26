@@ -6,8 +6,12 @@ h2 {
   text-align: center;
 }
 
-p {
+.aboutYou p, .aboutPage {
   text-align: center;
+}
+
+img {
+  width: 100px; height: 150px;
 }
 
 #javascript, #ruby, #python {

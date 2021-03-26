@@ -9,12 +9,9 @@ $(document).ready(function () {
     event.preventDefault();
     $(location).attr("href", "questions.html")
   })
-
   $("form#questionForm").submit(function (event) {
-
     const radio = $("input:radio[name=type]:checked").val();
     const select = $("#animalSelect").val();
-
     let result;
     if (radio === "frontend" && select === "lion") {
       result = $("#javascript").show();
