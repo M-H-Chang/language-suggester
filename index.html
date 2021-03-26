@@ -5,20 +5,40 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/bootstrap.css">
   <title>Language Selector</title>
 </head>
 
 <body>
-  <div class="container"></div>
-  <h1>Welcome to Programming Language Selector</h1>
-  <p id="about">This site is to help you understand the differences and the significance of which programming language
-    to choose and why. In order to give you the right suggestions and the best language to suggest to you we ask you to
-    fill out a form of your interests, what you want to do with code,
-    what kind of atmosphere of space you want to work, what your personality type is, and why you chose to
-    pursue the science of computers. </p>
+  <div class="container">
+    <h1>Welcome to Programming Language Selector</h1>
+    <p id="about">This site is to help you understand the differences and the significance of which programming language
+      to choose and why. In order to give you the right suggestions and the best language to suggest to you we ask you
+      to fill out a predetermined questionnaire form of your interests, what you want to do with code,
+      what kind of atmosphere of space you want to work, what your personality type is, and why you chose to
+      pursue the science of computers.</p>
 
-  <h2>About You</h2>
+    <div class="aboutYou">
+      <h2>About You</h2>
+      <p>First in the text below, include a brief description of who you are and why you want to study
+        computer programming. The reason for this is because one of our specialists will contact you for more
+        information
+        to consult which language and which route to choose from.</p>
+      <form id="aboutYouForm">
+        <label for="aboutYouText">Description of You:</label>
+        <input type="text" id="aboutYouText">
+        <label for="email">Enter your Email:</label>
+        <input type="email" id="email">
+        <label for="phone">Phone Number(Optional):</label>
+        <input type="tel" id="phone">
 
+        <button type="submit" id="aboutYouButton" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
 </body>
 
 </html>
