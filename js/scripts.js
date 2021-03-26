@@ -15,8 +15,15 @@ $(document).ready(function () {
     const radio = $("input:radio[name=type]:checked").val();
     const check = $("input[type='checkbox']").val();
     const select = $("#animalSelect").val();
-    console.log(radio);
-    console.log(check);
-    console.log(select);
+
+    let result;
+    if (radio === "frontend" && check === "tech" && select === "lion") {
+      result = $("#javascript").show();
+    } else if (radio === "backend" && check === "design" && select === "whale") {
+      result = $("#ruby").show();
+    } else if (radio === "both" && check === "other" && select === "eagle") {
+      result = $("#python").show();
+    }
+    $("results").text(result)
   })
 })
