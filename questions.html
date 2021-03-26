@@ -18,29 +18,38 @@
     <form id="questionForm">
       <div class="form-group">
         <label for="q1">Interests:</label>
-        <input type="text" class="form-control" id="q1">
+        <input type="text" class="form-control" id="interests">
       </div>
 
+      <label for="radio">What type of development:</label>
       <div class="radio">
         <label>
-          <input type="radio" value="frontend" name="type" checked>Frontend Development(User Interface)
+          <input type="radio" value="frontend" name="type" checked> Frontend Development(User Interface)
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" value="backend" name="type">Backend Development (Business Logic)
+          <input type="radio" value="backend" name="type"> Backend Development (Business Logic)
         </label>
       </div>
       <div class="radio">
         <label>
-          <input type="radio" value="both" name="type">Both
+          <input type="radio" value="both" name="type"> Both
         </label>
       </div>
 
-
-      <div class="form-group">
-        <label for="q3">Type of Company:</label>
-        <input type="text" class="form-control" id="q3">
+      <label for="q3">Type of Company:</label>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="tech">
+        <label class="form-check-label" for="inlineCheckbox1">Technology</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="design">
+        <label class="form-check-label" for="inlineCheckbox2">Design</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="other">
+        <label class="form-check-label" for="inlineCheckbox3">Other</label>
       </div>
 
       <div class="form-group">
