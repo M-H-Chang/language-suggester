@@ -1,15 +1,14 @@
 // -----Business Logic:-----
 
-
-
-
 // -----User Interface Logic:-----
 $(document).ready(function () {
   $("form#aboutYouForm").submit(function (event) {
     event.preventDefault();
     $(location).attr("href", "questions.html")
   })
+
   $("form#questionForm").submit(function (event) {
+    event.preventDefault();
     const radio = $("input:radio[name=type]:checked").val();
     const select = $("#animalSelect").val();
     let result;
@@ -26,7 +25,7 @@ $(document).ready(function () {
     } else if (radio === "backend" && select != "eagle") {
       result = $("#ruby").show();
     }
+
     $("results").text(result)
-    event.preventDefault();
   })
 })
