@@ -25,7 +25,6 @@ $(document).ready(function () {
     } else if (radio === "backend" && select != "eagle") {
       result = $("#ruby").show();
     }
-
     $("results").text(result)
   })
 })
