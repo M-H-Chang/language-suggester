@@ -5,10 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <script src="js/jquery-3.6.0.js"></script>
-  <script src="js/scripts.js"></script>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="css/bootstrap.css">
+  <script src="js/jquery-3.6.0.js"></script>
+  <script src="js/scripts.js"></script>
   <title>Survey</title>
 </head>
 
@@ -16,24 +16,42 @@
   <div class="container">
     <h1>Questionnaire</h1>
     <form id="questionForm">
-      <label for="q1">Interests:</label>
-      <input type="text" class="form-control" id="q1">
+      <div class="form-group">
+        <label for="q1">Interests:</label>
+        <input type="text" class="form-control" id="q1">
+      </div>
+
+      <div class="radio">
+        <label>
+          <input type="radio" value="frontend" name="type" checked>Frontend Development(User Interface)
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" value="backend" name="type">Backend Development (Business Logic)
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" value="both" name="type">Both
+        </label>
+      </div>
 
 
-      <label for="frontEnd">Frontend Development(user interface)</label>
-      <input type="radio" class="form-control" id="frontEnd">
-      <!-- <label for="q2">Frontend Development(user interface)</label>
-      <label for="q2">Backend Development(business logic)</label>
-      <label for="q2">Both</label> -->
+      <div class="form-group">
+        <label for="q3">Type of Company:</label>
+        <input type="text" class="form-control" id="q3">
+      </div>
 
-      <label for="q3">Type of Company:</label>
-      <input type="text" class="form-control" id="q3">
+      <div class="form-group">
+        <label for="q4">Personality Type:</label>
+        <input type="text" class="form-control" id="q4">
+      </div>
 
-      <label for="q4">Personality Type:</label>
-      <input type="text" class="form-control" id="q4">
-
-      <label for="q5">Why Computer Science?</label>
-      <input type="text" class="form-control" id="q5">
+      <div class="form-group">
+        <label for="q5">Why Computer Science?</label>
+        <input type="text" class="form-control" id="q5">
+      </div>
 
       <button type="submit" class="btn btn-primary" id="questionButton">Submit</button>
   </div>
