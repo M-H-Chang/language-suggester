@@ -11,19 +11,25 @@ $(document).ready(function () {
   })
 
   $("form#questionForm").submit(function (event) {
-    event.preventDefault();
+
     const radio = $("input:radio[name=type]:checked").val();
-    const check = $("input[type='checkbox']").val();
     const select = $("#animalSelect").val();
 
     let result;
-    if (radio === "frontend" && check === "tech" && select === "lion") {
+    if (radio === "frontend" && select === "lion") {
       result = $("#javascript").show();
-    } else if (radio === "backend" && check === "design" && select === "whale") {
+    } else if (radio === "backend" && select === "whale") {
       result = $("#ruby").show();
-    } else if (radio === "both" && check === "other" && select === "eagle") {
+    } else if (radio === "both" && select === "eagle") {
       result = $("#python").show();
+    } else if (radio === "both" || select === "eagle") {
+      result = $("#python").show();
+    } else if (radio === "frontend" && select != "eagle") {
+      result = $("#javascript").show();
+    } else if (radio === "backend" && select != "eagle") {
+      result = $("#ruby").show();
     }
     $("results").text(result)
+    event.preventDefault();
   })
 })
