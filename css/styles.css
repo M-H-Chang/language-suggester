@@ -13,3 +13,7 @@ p {
 #javascript, #ruby, #python {
   display: none;
 }
+
+#selectedDefault {
+  color: #ccc;
+}
