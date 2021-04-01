@@ -22,7 +22,7 @@ $(document).ready(function () {
       result = $("#python").show();
     } else if (radio === "frontend" && select != "eagle") {
       result = $("#javascript").show();
-    } else if (radio === "backend" && select != "eagle") {
+    } else {
       result = $("#ruby").show();
     }
     $("results").text(result)
