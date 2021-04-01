@@ -25,6 +25,7 @@ Many people have trouble with picking a programming language to start out. This 
 * _Copy clone link_
 * _Access local repository and which directory you want to clone from_
 * _Gitclone_
+* _Open cloned folder and open index.html in browser_
 * _Modify as necessary_
 
 _You do not need to run a server to run this application. No databases need to be set. This is a single repository that you need to access and you do not need any other application to run the webpage._
