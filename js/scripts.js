@@ -12,18 +12,22 @@ $(document).ready(function () {
     const radio = $("input:radio[name=type]:checked").val();
     const select = $("#animalSelect").val();
     let result;
-    if (radio === "frontend" && select === "lion") {
+    if (radio === "frontend") {
       result = $("#javascript").show();
-    } else if (radio === "backend" && select === "whale") {
+      $("#python").hide();
+      $("#ruby").hide();
+    } else if (radio === "backend") {
       result = $("#ruby").show();
-    } else if (radio === "both" && select === "eagle") {
+      $("#python").hide();
+      $("#javascript").hide();
+    } else if (radio === "both") {
       result = $("#python").show();
-    } else if (radio === "both" || select === "eagle") {
-      result = $("#python").show();
-    } else if (radio === "frontend" && select != "eagle") {
-      result = $("#javascript").show();
+      $("#javascript").hide();
+      $("#ruby").hide();
     } else {
-      result = $("#ruby").show();
+      result = $("#python").show();
+      $("#javascript").hide();
+      $("#ruby").hide();
     }
     $("results").text(result)
   })
